@@ -1,0 +1,101 @@
+body {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #fff;
+    color: #8B0000;
+    margin: 0;
+    padding: 20px;
+}
+
+#hub {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#main-nav ul li {
+    margin: 0 15px;
+}
+
+#main-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#main-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#skills ul {
+    list-style: disc;
+    padding-left: 20px;
+    background-color: #fff;
+}
+
+#skills ul li {
+    margin-bottom: 5px;
+}
+
+#work-experience ul {
+  list-style: disc;
+  padding-left: 20px;
+  background-color: #fff;
+}
+
+#work-experience ul li {
+  margin-bottom: 5px;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+}
+
+h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  color: #555;
+}
+
+h4 {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: white;
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #333; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  height: auto;
+}
