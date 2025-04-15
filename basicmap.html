@@ -9,8 +9,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-  <script src="https://maps.googleapis.com/maps/api/js?AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap"
-    async defer></script>
 </head>
 <body>
   <nav id="main-nav">
@@ -25,8 +23,8 @@
   <script>
     var map;
     function initMap() {
-      map = new google.maps.Map(document.getElementbyId('map'),(
-        center: (lat: -34.397, lng: 150, 6444),
+      map = new google.maps.Map(document.getElementById('map'),(
+        center: {lat: 41.8781, lng: -87.6298},
         zoom: 8
       ));
     }
