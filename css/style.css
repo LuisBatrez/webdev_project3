@@ -99,3 +99,59 @@ img {
   width: 15%;
   height: auto;
 }
+
+@media (min-width: 600px) {
+  #hub {
+    padding: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+  }
+
+  #main-nav ul {
+    justify-content: space-between;
+    padding: 15px 30px;
+  }
+
+  #main-nav ul li a {
+    font-size: 18px;
+  }
+
+  iframe {
+    width: 640px;
+    height: 360px;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 900px) {
+  #hub {
+    max-width: 1000px;
+    padding: 40px;
+    border-radius: 20px;
+  }
+
+  #main-nav ul {
+    padding: 20px 50px;
+    border-radius: 10px;
+  }
+
+  #main-nav ul li a {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  iframe {
+    width: 800px;
+    height: 450px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: center;
+  }
+}
