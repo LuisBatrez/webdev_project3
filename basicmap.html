@@ -23,16 +23,24 @@
       <li><a href="basicmap.html">Google Map</a></li>
     </ul>
   </nav> 
+  <button id="goToIIT">Show IIT</button>
   <div id="map"></div>
   <script>
     var map;
+    var iitMarker;
+    var iitInfoWindow;
+
     function initMap() {
+
+      const chicago = { lat: 41.8781, lng: -87.6298 };
+      const iit = { lat: 41.8349, lng: -87.6270 };
+
+
       map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 41.8781, lng: -87.6298},
       zoom: 8
       });
 
-      const iitMarker = new google.maps.Marker({
+      iitMarker = new google.maps.Marker({
       position: iit,
       map: map,
       title: "Illinois Institute of Technology",
@@ -42,7 +50,7 @@
       }
       });
 
-      const iitInfoWindow = new google.maps.InfoWindow({
+      iitInfoWindow = new google.maps.InfoWindow({
       content: `
         <div style="padding: 10px;">
           <h3 style="margin: 0; color: #CC0000;">Illinois Institute of Technology</h3>
@@ -51,6 +59,17 @@
         </div>
       `
       });
+
+      iitMarker.addListener("click", () => {
+        iitInfoWindow.open(map, iitMarker);
+      });
+
+      document.getElementById("goToIIT").addEventListener("click", () => {
+        map.panTo(iit);
+        map.setZoom(16);
+        iitInfoWindow.open(map, iitMarker);
+      });
+
     }
   </script>
 </body>
