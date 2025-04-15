@@ -12,6 +12,7 @@
   <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap">
   </script>
+  <script async src="js/script.js"></script>
 </head>
 <body>
   <nav id="main-nav">
@@ -39,8 +40,8 @@
         url: "https://maps.google.com/mapfiles/ms/icons/red-dot.png", // Red pin
         scaledSize: new google.maps.Size(40, 40) // Larger size
       }
-    });
-      
+      });
+
       const iitInfoWindow = new google.maps.InfoWindow({
       content: `
         <div style="padding: 10px;">
@@ -49,7 +50,7 @@
           <a href="https://www.iit.edu" target="_blank" style="color: #CC0000;">Visit Website</a>
         </div>
       `
-    });
+      });
     }
   </script>
 </body>
